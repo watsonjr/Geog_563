@@ -53,6 +53,7 @@ The term project is the main focus on the course. Students will work on their te
 | 8        | 10-Nov         | 12-Nov          | 13-Nov      | Jack (remote)      | James |
 | 9        | 17-Nov         | 19-Nov          | 20-Nov      | Jack (remote)       | NA    |
 | 10       | 24-Nov         | 26-Nov           | 27-Nov       | James                | NA    |
+
 No finals (go do some research and publish a paper instead)
 
 <!-- ![Course Icon](General/CourseIcon.jpg) -->
