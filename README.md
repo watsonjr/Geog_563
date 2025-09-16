@@ -19,22 +19,40 @@ In addition, graduate students will be able to:
 6) Select and cite relevant research articles
 7) Synthesize their findings into a broader environmental context
 
-## Course Modules and Organization, and Term Project
-This will be a flipped course: each week students will review study resources and come to class prepared to work on weekly problems. Throughout the term, students will work on a term project. There will be assigments specifically for the term project, as well as weekly assignements.
+## How each week works
+This will be a flipped course. This means that each week:
 
+1) Students will review study resources and come to class prepared to work on weekly problems. 
+2) There will be an assignment where students will perform exploratory data analysis on a new dataset.
+3) Students will spend most of their time in class working on their term projects. 
+
+The term project is the main focus on the course. Students will work on their term project in small groups, and there will be assigments periodically through the term on their projects. In addition, each week students will be expected to report on progress using updates to their project's Github repo (this will be described in the first week).
+
+## The Course at a Glance
+- Week 1: introduction to the course, people, and term project. 
+- Week 2: coding fundamentals (R, Python, Julia, Matlab, Mathematica), the 1-page pitch
+- Week 3: github, terminal, learning how to learn (stackoverflow, llms)
+- Week 4: data (wrangling, QCQA), plotting using code, exploratory data analysis, 
+- Week 5: lab reporting (the 10 minute presentation)
+- Week 6: mid-term presentations
+- Week 7: high performance computing (HPC)
+- Week 8: machine learning I
+- Week 9: machine learning II
+- Week 10: term project reporting and presentations
 
 ## Schedule
 | **Week** | **Mon Lecture** | **Wed Lecture** | **Thu Lab** | **Lead Instructor** | **Supporting Instructor**          |
 |----------|-----------------|-----------------|-------------|---------------------|------------------------------------|
-| 1        | 31-Mar          | 2-Apr           | 3-Apr       | Zech                | NA    |
-| 2        | 7-Apr           | 9-Apr           | 10-Apr      | James               | NA    |
-| 3        | 14-Apr          | 16-Apr          | 17-Apr      | Zech                | NA    |
-| 4        | 21-Apr          | 23-Apr          | 24-Apr      | Zech                | NA    |
-| 5        | 28-Apr          | 30-Apr          | 1-May       | James               | NA    | 
-| 6        | 5-May           | 7-May           | 8-May       | Zech                | NA    |
-| 7        | 12-May          | 14-May          | 15-May      | James               | NA    |
-| 8        | 19-May          | 21-May          | 22-May      | Jack (guest)        | James    |
-| 9        | HOLIDAY         | 28-May          | 29-May      | James               | NA    |
-| 10       | 2-Jun           | 4-Jun           | 5-Jun       | Zech                | NA    |
+| 1        | X              | 24-Sep          | 5-Sep       | James                | NA    |
+| 2        | 29-Sep         | 1-Oct           | 2-Oct      | James               | NA    |
+| 3        | 6-Oct          | 8-Oct          | 9-Oct      | James                | NA    |
+| 4        | 13-Oct         | 15-Oct          | 16-Oct      | James                | NA    |
+| 5        | 20-Oct         | 22-Oct          | 23-Oct       | James               | NA    | 
+| 6        | 27-Oct         | 29-Oct           | 30-Oct       | James                | NA    |
+| 7        | 3-Nov          | 5-Nov          | 6-Nov      | James               | NA    |
+| 8        | 10-Nov         | 12-Nov          | 13-Nov      | Jack (remote)      | James |
+| 9        | 17-Nov         | 19-Nov          | 20-Nov      | Jack (remote)       | NA    |
+| 10       | 24-Nov         | 26-Nov           | 27-Nov       | James                | NA    |
+No finals (go do some research and publish a paper instead)
 
-![Course Icon](General/CourseIcon.jpg)
+<!-- ![Course Icon](General/CourseIcon.jpg) -->
