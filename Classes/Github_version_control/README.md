@@ -106,7 +106,7 @@ Writing Good Documentation
   * * for bullet lists
   * ``` for code blocks ```
   * [text](url) for links
-  * ![](./Resources/Images/image_1.png) for images
+  * ![](../../Resources/Images/image_1.png) for images
 
 Common Mistakes & How to Fix Them
 ---------------------------------
