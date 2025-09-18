@@ -22,10 +22,10 @@ In addition, graduate students will be able to:
 ## How each week works
 This is a flipped course where students will learn by doing. The two main learning mechanisms are 1) weekly github repo development and 2) a term project (that can be done in teams).
 
-### Weekly Github Practice Assignments
-Every week, students will work in teams to create Github repos for various topics. The instructor will provide instruction for the challenge of the week. Then, students will work on the weekly assignment in class. The weekly assignments are focused on gaining experience working with **Github**, through collaborative coding and version control. Specifically, each week
+### Weekly Github Development
+Every week, students will work in teams to create Github repos for various topics. The instructor will provide instruction for the challenge of the week. Then, students will work on the weekly assignment in class. The weekly assignments are focused on gaining experience working with **Github**, through collaborative coding/writing and version control. Specifically, each week
 
-1) The instructor will provide a short primer (~10mins) on the weeks challenge. Weekly challenges will focus on developing Github README.md pages for different topics of relevance to analytical workflows
+1) The instructor will provide a short primer (~10mins) on the week's challenge. Weekly challenges will focus on developing Github README.md pages for different topics of relevance to analytical workflows
 2) Students will then break into groups and start working on the challenges in class time. This will involve Forking the class repo and working collaboratively. 
 3) At the end of the week, students will merge their contributions to the class repo
 2) The following week, students will conduct peer-review on each other's repo's, and provide feedback. Students then have an opportunity to make updates before submitting their repo as an assignment in Canvas.
@@ -38,7 +38,7 @@ The term project is the main focus on the course. Students will work on their te
 - End-term 15 min presentation (Week 10)
 - Project report (by end of Finals)
 
-In addition, every Monday and Thursday, the instructor will hold "open" and "close" meetings: this will involve students detailing what they will work on in the week, and what they have done respectively. This will be documented on this google doc:
+In addition, every Monday and Thursday, the instructor will hold "open" and "close" meetings: this will involve students detailing what they will individually work on in the week, and what they have done respectively. This will be documented on this google doc:
 
 https://docs.google.com/document/d/16Rht2inZYq5yl8y89sqppsBJeLIvgdFAI-DV6jqCMfE/edit?usp=sharing
 
@@ -71,7 +71,7 @@ https://docs.google.com/document/d/16Rht2inZYq5yl8y89sqppsBJeLIvgdFAI-DV6jqCMfE/
     - Weekly challenge topic 1: High performance computing
     - Weekly challenge topic 2: Google_earth_engine
 - Week 8: machine learning I
-    - Dr. Jack Buckner to give lectures that will blow your mind
+    - Dr. Jack Buckner to give lectures on Machine Learning that will blow your mind
 - Week 9:
     - Independent work on projects 
 - Week 10: 
@@ -96,4 +96,4 @@ https://docs.google.com/document/d/16Rht2inZYq5yl8y89sqppsBJeLIvgdFAI-DV6jqCMfE/
 - No finals (go do some research and publish a paper instead)
 - X means no class
 
-<!-- ![Course Icon](General/CourseIcon.jpg) -->
+![Course Icon](./Resources/Images/image_2.jpg)
