@@ -20,40 +20,80 @@ In addition, graduate students will be able to:
 7) Synthesize their findings into a broader environmental context
 
 ## How each week works
-This will be a flipped course. This means that each week:
+This is a flipped course where students will learn by doing. The two main learning mechanisms are 1) weekly github repo development and 2) a term project (that can be done in teams).
 
-1) Students will review study resources and come to class prepared to work on weekly problems. 
-2) There will be an assignment where students will perform exploratory data analysis on a new dataset.
-3) Students will spend most of their time in class working on their term projects. 
+### Weekly Github Practice Assignments
+Every week, students will work in teams to create Github repos for various topics. The instructor will provide instruction for the challenge of the week. Then, students will work on the weekly assignment in class. The weekly assignments are focused on gaining experience working with **Github**, through collaborative coding and version control. Specifically, each week
 
-The term project is the main focus on the course. Students will work on their term project in small groups, and there will be assigments periodically through the term on their projects. In addition, each week students will be expected to report on progress using updates to their project's Github repo (this will be described in the first week).
+1) The instructor will provide a short primer (~10mins) on the weeks challenge. Weekly challenges will focus on developing Github README.md pages for different topics of relevance to analytical workflows
+2) Students will then break into groups and start working on the challenges in class time. This will involve Forking the class repo and working collaboratively. 
+3) At the end of the week, students will merge their contributions to the class repo
+2) The following week, students will conduct peer-review on each other's repo's, and provide feedback. Students then have an opportunity to make updates before submitting their repo as an assignment in Canvas.
+
+### Term-Project
+The term project is the main focus on the course. Students will work on their term project in small groups, and there will be assignments periodically through the term on their projects. The project assignments are:
+
+- 1-page project pitch (Week 3)
+- Mid-term 10 min presentation (Week 5)
+- End-term 15 min presentation (Week 10)
+- Project report (by end of Finals)
+
+In addition, every Monday and Thursday, the instructor will hold "open" and "close" meetings: this will involve students detailing what they will work on in the week, and what they have done respectively. This will be documented on this google doc:
+
+https://docs.google.com/document/d/16Rht2inZYq5yl8y89sqppsBJeLIvgdFAI-DV6jqCMfE/edit?usp=sharing
 
 ## The Course at a Glance
-- Week 1: introduction to the course, people, and term project. 
-- Week 2: coding fundamentals (R, Python, Julia, Matlab, Mathematica), the 1-page pitch
-- Week 3: github, terminal, learning how to learn (stackoverflow, llms)
-- Week 4: data (wrangling, QCQA), plotting using code, exploratory data analysis, 
-- Week 5: lab reporting (the 10 minute presentation)
-- Week 6: mid-term presentations
-- Week 7: high performance computing (HPC)
+- Week 1: 
+    - Introduction to the course and getting to know each other 
+    - Starting term projects 
+    - Review these Repos: 1) Learning how to learn, 2) Github version control, 3) Peer-review 
+- Week 2: 
+    - Weekly challenge topic 1: Terminal_IDEs_Shell 
+    - Weekly challenge topic 2: Scientific_coding_in_R 
+    - Project focus: the 1-page pitch, project management
+- Week 3: 
+    - Weekly challenge topic 1: Exploratory_data_analysis
+    - Weekly challenge topic 1: Typesetting (Markdown and Latex)
+    - Project focus: getting data
+- Week 4: 
+    - Weekly challenge topic 1: Plotting using code
+    - Weekly challenge topic 2: LLMs
+    - Project focus: making good short presentation
+- Week 5: 
+    - Project assignment 10 minute presentation
+    - Independent work on projects
+
+- Week 6: 
+    - Weekly challenge topic 1: Workflow_visualization
+    - Weekly challenge topic 2: Writing collaboratively
+    - Project focus: project reporting
+- Week 7: 
+    - Weekly challenge topic 1: High performance computing
+    - Weekly challenge topic 2: Google_earth_engine
 - Week 8: machine learning I
-- Week 9: machine learning II
-- Week 10: term project reporting and presentations
+    - Dr. Jack Buckner to give lectures that will blow your mind
+- Week 9:
+    - Independent work on projects 
+- Week 10: 
+    - End-term project reporting and presentations
 
 ## Schedule
-| **Week** | **Mon Lecture** | **Wed Lecture** | **Thu Lab** | **Lead Instructor** | **Supporting Instructor**          |
+| **Week** | **Mon Lecture** | **Wed Lecture** | **Thu Lab** | **Lead Instructor** | **Project Milestones**          |
 |----------|-----------------|-----------------|-------------|---------------------|------------------------------------|
-| 1        | X              | 24-Sep          | 5-Sep       | James                | NA    |
-| 2        | 29-Sep         | 1-Oct           | 2-Oct      | James               | NA    |
-| 3        | 6-Oct          | 8-Oct          | 9-Oct      | James                | NA    |
-| 4        | 13-Oct         | 15-Oct          | 16-Oct      | James                | NA    |
-| 5        | 20-Oct         | 22-Oct          | 23-Oct       | James               | NA    | 
-| 6        | 27-Oct         | 29-Oct           | 30-Oct       | James                | NA    |
-| 7        | 3-Nov          | 5-Nov          | 6-Nov      | James               | NA    |
-| 8        | 10-Nov         | 12-Nov          | 13-Nov      | Jack (remote)      | James |
-| 9        | 17-Nov         | 19-Nov          | 20-Nov      | Jack (remote)       | NA    |
-| 10       | 24-Nov         | 26-Nov           | 27-Nov       | James                | NA    |
+| **1**| X      | 24-Sep  | X      | James  | NA |
+| **2**| 29-Sep | 1-Oct   | 2-Oct  | James  | NA    |
+| **3**| 6-Oct  | 8-Oct   | 9-Oct  | James  | 1-page project pitch    |
+| **4**| 13-Oct | 15-Oct  | 16-Oct | James  | NA    |
+| **5**| 20-Oct | 22-Oct  | 23-Oct | James  | Mid-term presentation    | 
+| **6**| 27-Oct | 29-Oct  | 30-Oct | James  | NA    |
+| **7**| 3-Nov  | 5-Nov   | 6-Nov  | James  | NA    |
+| **8**| 10-Nov | 12-Nov  | 13-Nov | Jack   | NA    |
+| **9**| 17-Nov | 19-Nov  | 20-Nov | Jack   | NA    |
+|**10**| 24-Nov | 26-Nov  | 27-Nov | James  | End-term presentation  |
+|**11**| X      | X       | X      | James  | Report  |
 
-No finals (go do some research and publish a paper instead)
+### Notes
+- No finals (go do some research and publish a paper instead)
+- X means no class
 
 <!-- ![Course Icon](General/CourseIcon.jpg) -->
