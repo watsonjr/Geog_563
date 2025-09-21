@@ -1,2 +1,1 @@
-# Empty README that should be filled.
-
+# Syllabus for Geog 4/563

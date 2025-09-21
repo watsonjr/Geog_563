@@ -2,6 +2,9 @@
 
 Welcome to the course webpage for GEOG 463/563 at Oregon State University! This repository will contain all resources for the course.
 
+## Communication
+[Prof. James Watson](https://jrwatson.ceoas.oregonstate.edu/people/) will be your instructor. That's me. Communicate with me in class, or email me at james.watson@oregonstate.edu.
+
 ## Course Description
 This course explores data science methods used to gather, validate, organize, analyze, and summarize large amounts of environmental and ecological information. Focuses on developing analytical workflows that are efficient, reproducible, and modular using scientific coding languages, and version control and collaborative coding environments. Examines case studies including climate change, biodiversity assessments, epidemic modeling, marine spatial planning, and natural resource management.
 
@@ -44,9 +47,9 @@ https://docs.google.com/document/d/16Rht2inZYq5yl8y89sqppsBJeLIvgdFAI-DV6jqCMfE/
 
 ## The Course at a Glance
 - Week 1: 
-    - Introduction to the course and getting to know each other 
+    - Introduction to the course, learning how to learn, getting to know each other 
     - Starting term projects 
-    - Review these Repos: 1) Learning how to learn, 2) Github version control, 3) Peer-review 
+    - Review these Repos: 1) Weekly assignments, 2) Github version control, 3) Peer-review 
 - Week 2: 
     - Weekly challenge topic 1: Terminal_IDEs_Shell 
     - Weekly challenge topic 2: Scientific_coding_in_R 
@@ -70,7 +73,7 @@ https://docs.google.com/document/d/16Rht2inZYq5yl8y89sqppsBJeLIvgdFAI-DV6jqCMfE/
 - Week 7: 
     - Weekly challenge topic 1: High performance computing
     - Weekly challenge topic 2: Google_earth_engine
-- Week 8: machine learning I
+- Week 8: Machine Learning I
     - Dr. Jack Buckner to give lectures on Machine Learning that will blow your mind
 - Week 9:
     - Independent work on projects 
