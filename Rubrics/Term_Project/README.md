@@ -28,7 +28,7 @@
 # Rubric for term project end-term presentation
 
 ## Scoring
-- Each category: 1–5 points  
+- Each category: 1–4 points  
 - **Total possible: 20 points**
 
 | Criterion | Excellent (4) | Adequate (2) | Needs Improvement (1) |
