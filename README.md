@@ -39,7 +39,7 @@ The term project is the main focus on the course. Students will work on their te
 - 1-page project pitch (Week 3)
 - Mid-term 10 min presentation (Week 5)
 - End-term 15 min presentation (Week 10)
-- Project report (by end of Finals)
+- Project GitHub Repo (by end of Finals)
 
 In addition, every Monday and Thursday, the instructor will hold "open" and "close" meetings: this will involve students detailing what they will individually work on in the week, and what they have done respectively. This will be documented on this google doc:
 
@@ -47,38 +47,42 @@ https://docs.google.com/document/d/16Rht2inZYq5yl8y89sqppsBJeLIvgdFAI-DV6jqCMfE/
 
 ## The Course at a Glance
 - Week 1: 
-    - Introduction to the course, learning how to learn, getting to know each other 
-    - Starting term projects 
-    - Review these Repos: 1) Weekly assignments, 2) Github version control, 3) Peer-review 
+    - Lecture: Introduction to the course, learning how to learn, getting to know each other, starting term projects
+    - Review these Repos: 1) Weekly assignments, 2) Github version control
+
 - Week 2: 
-    - Weekly challenge topic 1: Terminal_IDEs_Shell 
-    - Weekly challenge topic 2: Scientific_coding_in_R 
-    - Project focus: the 1-page pitch, project management
+    - Lecture: the 1-page pitch, project management (setting up your project GitHub repo, operating as a team)
+    - GitHub topics: Terminal_IDEs_Shell, Scientific_coding_in_R 
+    
 - Week 3: 
-    - Weekly challenge topic 1: Exploratory_data_analysis
-    - Weekly challenge topic 1: Typesetting (Markdown and Latex)
-    - Project focus: getting data
+    - Lecture: getting data, wrangling data, QCQA, Exploratory data analysis, LLMs
+    - Github topics: Exploratory_data_analysis, LLMs
+
 - Week 4: 
-    - Weekly challenge topic 1: Plotting using code
-    - Weekly challenge topic 2: LLMs
-    - Project focus: making good short presentation
+    - Lecture: making good short presentation, plotting with code, workflow viz
+    - Github topics: Plotting using code, Workflow visualization
+     
 - Week 5: 
     - Project assignment 10 minute presentation
     - Independent work on projects
 
 - Week 6: 
-    - Weekly challenge topic 1: Workflow_visualization
-    - Weekly challenge topic 2: Writing collaboratively
-    - Project focus: project reporting
+    - Lecture: project reporting (GitHub repo README / report writing), GEE, HPC
+    - GitHub topics: Google_earth_engine, High performance computing
+    
 - Week 7: 
-    - Weekly challenge topic 1: High performance computing
-    - Weekly challenge topic 2: Google_earth_engine
+    - Lecture: Your choice
+    - GitHub topics: Your choice, Your choice
+
 - Week 8: Machine Learning I
     - Dr. Jack Buckner to give lectures on Machine Learning that will blow your mind
+    - GitHub topics: none
+
 - Week 9:
     - Independent work on projects 
+    
 - Week 10: 
-    - End-term project reporting and presentations
+    - End-term project GitHub Repo and presentations
 
 ## Schedule
 | **Week** | **Mon Lecture** | **Wed Lecture** | **Thu Lab** | **Lead Instructor** | **Project Milestones**          |
@@ -93,10 +97,28 @@ https://docs.google.com/document/d/16Rht2inZYq5yl8y89sqppsBJeLIvgdFAI-DV6jqCMfE/
 | **8**| 10-Nov | 12-Nov  | 13-Nov | Jack   | NA    |
 | **9**| 17-Nov | 19-Nov  | 20-Nov | Jack   | NA    |
 |**10**| 24-Nov | 26-Nov  | 27-Nov | James  | End-term presentation  |
-|**11**| X      | X       | X      | James  | Report  |
+|**11**| X      | X       | X      | James  | Project GitHub Repo finished  |
 
 ### Notes
 - No finals (go do some research and publish a paper instead)
 - X means no class
+
+## Grading
+Assignments will be managed on Canvas. Points are as follows
+
+### Weekly GitHub assignments
+Week 2: 5 points (5%)
+Week 3: 5 points (5%)
+Week 4: 5 points (5%)
+Week 6: 5 points (5%)
+Week 7: 5 points (5%)
+
+### Project
+Week 3: 1-page pitch 12 points (12%)
+Week 5: mid-term presentation 16 points (16%)
+Week 10: end-term presentation 20 points (20%)
+Week 10: Project GitHub repo finished 28 points (28%)
+
+Total points: 100 (100%)
 
 ![Course Icon](./Resources/Images/image_2.jpg)

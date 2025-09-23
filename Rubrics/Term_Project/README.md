@@ -1,10 +1,10 @@
 # Rubric for term project 1-page pitch
 
 ## Scoring
-- Each category: 1–5 points  
-- **Total possible: 25 points**
+- Each category: 1–3 points  
+- **Total possible: 12 points**
 
-| Criterion | Excellent (5) | Adequate (3) | Needs Improvement (1) |
+| Criterion | Excellent (3) | Adequate (2) | Needs Improvement (1) |
 |-----------|---------------|----------------|--------------------------|
 | **Clarity & Organization** | Ideas are presented logically and concisely; writing is polished and professional. | Mostly clear and understandable, with some issues in flow, phrasing, or polish. | Difficult to follow, poorly structured, or confusing. |
 | **Completeness** | Thoroughly addresses each Catechism question; nothing important omitted. | Addresses most questions with sufficient detail, but some are brief or underdeveloped. | Multiple questions not addressed or left vague. |
@@ -14,10 +14,10 @@
 # Rubric for term project mid-term presentation
 
 ## Scoring
-- Each category: 1–5 points  
-- **Total possible: 25 points**
+- Each category: 1–4 points  
+- **Total possible: 16 points**
 
-| Criterion | Excellent (5) | Adequate (3) | Needs Improvement (1) |
+| Criterion | Excellent (4) | Adequate (2) | Needs Improvement (1) |
 |-----------|---------------|----------------|--------------------------|
 | **Problem Statement** | Clearly and compellingly describes the research problem; well-motivated and easy to understand. | States the problem with some clarity, but rationale is underdeveloped. | Problem is vague, confusing, or poorly motivated. |
 | **Planned Analyses & Anticipated Results** | Presents a logical plan for analyses with expected outcomes; shows good grasp of methods. | Provides some plan for analyses, but lacks detail or connection to results. | Analysis plan is vague, unrealistic, or missing. |
@@ -29,9 +29,9 @@
 
 ## Scoring
 - Each category: 1–5 points  
-- **Total possible: 25 points**
+- **Total possible: 20 points**
 
-| Criterion | Excellent (5) | Adequate (3) | Needs Improvement (1) |
+| Criterion | Excellent (4) | Adequate (2) | Needs Improvement (1) |
 |-----------|---------------|----------------|--------------------------|
 | **Problem & Motivation** | Clearly and compellingly describes the research problem and its motivation. | States the problem, but rationale is underdeveloped. | Problem is vague, confusing, or poorly motivated. |
 | **Data & Methods** | Clearly describes data sources and analysis methods; demonstrates understanding of why methods were chosen. | Mentions data and methods, but lacks detail or clarity on appropriateness. | Data or methods are missing, unclear, or poorly matched to the problem. |
@@ -41,13 +41,13 @@
 
 
 
-# Rubric for term project report
+# Rubric for Term Project GitHub Repo
 
 ## Scoring
-- Each category: 2-10 points  
-- **Total possible: 70 points**
+- Each category: 1-4 points  
+- **Total possible: 28 points**
 
-| Criterion | Excellent (10) | Adequate (5) | Needs Improvement (2) |
+| Criterion | Excellent (4) | Adequate (2) | Needs Improvement (1) |
 |-----------|---------------|----------------|--------------------------|
 | **Introduction** | Provides clear background, motivation, and well-defined research question(s). | Gives some background, but research question is vague or underdeveloped. | Lacks clear introduction or problem statement. |
 | **Methods** | Methods are described clearly and in enough detail for reproducibility; justified choices. | Methods are mentioned but lack detail or rationale; some steps unclear. | Methods are missing, vague, or inappropriate. |
