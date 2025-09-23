@@ -1,6 +1,6 @@
 # Weekly Workflow Github Repo Practice
 
-Each week, you and your team will work on one of the topic folders in our class GitHub repo (e.g., `Terminal-IDEs-Shell/`, `Scientific-R/`). Your job is to create or update the `README.md` file in that folder, then share your work with the class through GitHub.  
+Each week, you and your team will work on one of the topic folders in our class GitHub repo (e.g., `Terminal-IDEs-Shell/`, `Scientific_coding_in_R/`). Your job is to create or update the `README.md` file in that folder, then share your work with the class through GitHub.  
 
 Don’t worry if you’ve never used GitHub before—just follow these steps each week.
 
@@ -58,7 +58,7 @@ When it’s your team’s week to *write* a README.md:
 
 When it’s your team’s week to *review* another team’s work:  
 
-1. **Go to GitHub.com → Pull Requests**  
+1. **Go to GitHub.com → Pull Requests (PR)**  
    - Find the PR created by the other team.  
 
 2. **Read the README.md carefully**  
@@ -86,16 +86,9 @@ When it’s your team’s week to *review* another team’s work:
 
 ## 5. Class Workflow at a Glance: Week 1
 
-**Week A – Writing**  
-- Team A: Write `Terminal-IDEs-Shell/README.md`  
-- Team B: Write `Scientific-R/README.md`  
-
-**Week B – Reviewing**  
-- Team A: Review `Scientific-R/README.md`  
-- Team B: Review `Terminal-IDEs-Shell/README.md`  
-
-**Week C – Revision**  
-- Teams revise their work → merge into `main`.  
+**Week 2 
+- Team A: Write `Peer_review/README.md`  
+- Team B: Write `Terminal-IDEs-Shell/README.md`  
 
 Instructor reviews final repos and assigns grades.  
 
