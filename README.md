@@ -108,17 +108,28 @@ Assignments will be managed on Canvas. Points are as follows
 
 ### Weekly GitHub assignments
 Week 2: 5 points (5%)
+
 Week 3: 5 points (5%)
+
 Week 4: 5 points (5%)
+
 Week 6: 5 points (5%)
+
 Week 7: 5 points (5%)
 
 ### Project
 Week 3: 1-page pitch 12 points (12%)
+
 Week 5: mid-term presentation 16 points (16%)
+
 Week 10: end-term presentation 20 points (20%)
+
 Week 10: Project GitHub repo finished 28 points (28%)
 
-Total points: 100 (100%)
+**Total points: 100 (100%)**
+
+
+--------
+
 
 ![Course Icon](./Resources/Images/image_2.jpg)
