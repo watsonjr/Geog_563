@@ -85,18 +85,18 @@ https://docs.google.com/document/d/16Rht2inZYq5yl8y89sqppsBJeLIvgdFAI-DV6jqCMfE/
     - End-term project GitHub Repo and presentations
 
 ## Schedule
-| **Week** | **Mon Lecture** | **Wed Lecture** | **Thu Lab** | **Lead Instructor** | **Project Milestones**          |
+| **Week** | **Mon Lecture** | **Tues Lab** | **Wed Lecture** | **Lead Instructor** | **Project Milestones**          |
 |----------|-----------------|-----------------|-------------|---------------------|------------------------------------|
 | **1**| X      | 24-Sep  | X      | James  | NA |
-| **2**| 29-Sep | 1-Oct   | 2-Oct  | James  | NA    |
-| **3**| 6-Oct  | 8-Oct   | 9-Oct  | James  | 1-page project pitch    |
-| **4**| 13-Oct | 15-Oct  | 16-Oct | James  | NA    |
-| **5**| 20-Oct | 22-Oct  | 23-Oct | James  | Mid-term presentation    | 
-| **6**| 27-Oct | 29-Oct  | 30-Oct | James  | NA    |
-| **7**| 3-Nov  | 5-Nov   | 6-Nov  | James  | NA    |
-| **8**| 10-Nov | 12-Nov  | 13-Nov | Jack   | NA    |
-| **9**| 17-Nov | 19-Nov  | 20-Nov | Jack   | NA    |
-|**10**| 24-Nov | 26-Nov  | 27-Nov | James  | End-term presentation  |
+| **2**| 29-Sep | 30-Sep   | 1-Oct  | James  | NA    |
+| **3**| 6-Oct  | 7-Oct   | 8-Oct  | James  | 1-page project pitch    |
+| **4**| 13-Oct | 14-Oct  | 15-Oct | James  | NA    |
+| **5**| 20-Oct | 21-Oct  | 22-Oct | James  | Mid-term presentation    | 
+| **6**| 27-Oct | 28-Oct  | 29-Oct | James  | NA    |
+| **7**| 3-Nov  | 4-Nov   | 5-Nov  | James  | NA    |
+| **8**| 10-Nov | 11-Nov  | 12-Nov | Jack   | NA    |
+| **9**| 17-Nov | 18-Nov  | 19-Nov | Jack   | NA    |
+|**10**| 24-Nov | 25-Nov  | 26-Nov | James  | End-term presentation  |
 |**11**| X      | X       | X      | James  | Project GitHub Repo finished  |
 
 ### Notes

@@ -52,7 +52,14 @@ When it’s your team’s week to *write* a README.md:
    - Assign reviewers (your peer team).  
    - Click **Create pull request**.  
 
----
+### Resources
+There are lots of good videos describing this process. Here are two:
+
+https://www.youtube.com/watch?v=jRLGobWwA3Y
+
+https://www.youtube.com/watch?v=8x6V5IOuXog 
+
+
 
 ## 3. Weekly Peer Review Assignment
 
