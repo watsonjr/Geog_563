@@ -1,6 +1,6 @@
 ## Definition
 
-Terminal: a text-based interface that allows the user to write commands directly to the computer's operating system. Most computers will have a default terminal, but different programs may have their own terminals that can converse with the computer's operating system as well.
+Terminal: a text-based interface that allows the user to write commands directly to the computer's operating system. Most computers will have a default terminal, but different programs may have their own terminals that can converse with the computer's operating system as well. Note that different operating systems may use different languages.
 
 Some terminal/command line basics:
 - * pwd = print working directory; answers the question "where am I working right now?"
