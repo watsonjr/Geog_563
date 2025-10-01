@@ -14,7 +14,7 @@ Some terminal/command line basics:
 - * cd .. = change directory, go up one level
 
 ### Shell Scripting
-The practice of writing those commands in a text file (a script) so they can be executed automatically in sequence, allowing users to automate tasks, manage workflows, and save time on repetitive operations.
+The practice of writing those commands in a text file (a script) so they can be executed automatically in sequence, allowing users to automate tasks, manage workflows, and save time on repetitive operations. These files will typically come as a batch or .bat file on Windows and a shell or .sh file on macOS. 
 
 ### IDE
 An integrated development environment is a software application that provides comprehensive facilities for software development. An IDE normally consists of at least a source-code editor, build automation tools, and a debugger. Examples of an IDE are VSCode, RStudio, PyCharm, and NetBeans.
