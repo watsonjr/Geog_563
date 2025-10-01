@@ -11,3 +11,10 @@ Most IDEs have an internal terminal which allows the user to interact with their
 a program that provides a command-line interface, letting users interact with the operating system by typing commands such as navigating folders, running programs, or managing files.
 ## Shell Scripting
 the practice of writing those commands in a text file (a script) so they can be executed automatically in sequence, allowing users to automate tasks, manage workflows, and save time on repetitive operations.
+
+## Benefits of Terminal Use
+Allows for faster access to all available commands
+Enables users to work directly with any part of the system (files, processes, memory locations, etc.)
+No mouse is neccessary when using terminal
+Error messages given directly
+
