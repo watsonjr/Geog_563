@@ -5,6 +5,8 @@ Amergin McDavid
 
 Guillermo Ochoa
 
+Jose Contreras 
+
 ## 563
 Helena Kroleski	
 
@@ -24,4 +26,5 @@ kroleskh@oregonstate.edu,
 lawanons@oregonstate.edu,
 trevaths@oregonstate.edu,
 wallasel@oregonstate.edu,
-mondschz@oregonstate.edu
+mondschz@oregonstate.edu,
+contjose@oregonstate.edu
