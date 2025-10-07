@@ -226,7 +226,7 @@ summary(my_data)
 ```
 
 ## Best Practices
-**Document Everything**: Keep track of who wrote the code and its intended purpose by writing a 1-2 sentence 
+- **Document Everything**: Keep track of who wrote the code and its intended purpose by writing a 1-2 sentence 
 description at the beginning of the file.
-**Keep Code Clean**: Load all packages at the top of your script, define key variables early, keep consistent naming conventions, add clear comments
-**Make Code Modular**: Avoid repetition by using interaction and defining functions when possible. 
+- **Keep Code Clean**: Load all packages at the top of your script, define key variables early, keep consistent naming conventions, add clear comments
+- **Make Code Modular**: Avoid repetition by using interaction and defining functions when possible. 
