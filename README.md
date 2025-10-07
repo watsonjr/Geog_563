@@ -46,58 +46,62 @@ In addition, every Monday and Thursday, the instructor will hold "open" and "clo
 https://docs.google.com/document/d/16Rht2inZYq5yl8y89sqppsBJeLIvgdFAI-DV6jqCMfE/edit?usp=sharing
 
 ## The Course at a Glance
-- Week 1: 
+- Week 0: 
     - Lecture: Introduction to the course, learning how to learn, getting to know each other, starting term projects
     - Review these Repos: 1) Weekly assignments, 2) Github version control
 
-- Week 2: 
+- Week 1: 
     - Lecture: the 1-page pitch, project management (setting up your project GitHub repo, operating as a team)
     - GitHub topics: Terminal_IDEs_Shell, Scientific_coding_in_R 
     
-- Week 3: 
+- Week 2: 
     - Lecture: getting data, wrangling data, QCQA, Exploratory data analysis, LLMs
-    - Github topics: Exploratory_data_analysis, LLMs
+    - Github topics: Exploratory_data_analysis, Plotting using code
 
-- Week 4: 
+- Week 3: 
     - Lecture: making good short presentation, plotting with code, workflow viz
-    - Github topics: Plotting using code, Workflow visualization
+    - Github topics: Workflow visualization, LLMs
      
-- Week 5: 
+- Week 4: 
     - Project assignment 10 minute presentation
     - Independent work on projects
 
-- Week 6: 
+- Week 5: 
     - Lecture: project reporting (GitHub repo README / report writing), GEE, HPC
     - GitHub topics: Google_earth_engine, High performance computing
     
-- Week 7: 
+- Week 6: 
     - Lecture: Your choice
     - GitHub topics: Your choice, Your choice
 
-- Week 8: Machine Learning I
+- Week 7: Machine Learning I
     - Dr. Jack Buckner to give lectures on Machine Learning that will blow your mind
     - GitHub topics: none
 
-- Week 9:
+- Week 8:
     - Independent work on projects 
     
+- Week 9: 
+    - Independent work on projects
+
 - Week 10: 
     - End-term project GitHub Repo and presentations
+
 
 ## Schedule
 | **Week** | **Mon Lecture** | **Tues Lab** | **Wed Lecture** | **Lead Instructor** | **Project Milestones**          |
 |----------|-----------------|-----------------|-------------|---------------------|------------------------------------|
-| **1**| X      | 24-Sep  | X      | James  | NA |
-| **2**| 29-Sep | 30-Sep   | 1-Oct  | James  | NA    |
-| **3**| 6-Oct  | 7-Oct   | 8-Oct  | James  | 1-page project pitch    |
-| **4**| 13-Oct | 14-Oct  | 15-Oct | James  | NA    |
-| **5**| 20-Oct | 21-Oct  | 22-Oct | James  | Mid-term presentation    | 
-| **6**| 27-Oct | 28-Oct  | 29-Oct | James  | NA    |
-| **7**| 3-Nov  | 4-Nov   | 5-Nov  | James  | NA    |
-| **8**| 10-Nov | 11-Nov  | 12-Nov | Jack   | NA    |
-| **9**| 17-Nov | 18-Nov  | 19-Nov | Jack   | NA    |
-|**10**| 24-Nov | 25-Nov  | 26-Nov | James  | End-term presentation  |
-|**11**| X      | X       | X      | James  | Project GitHub Repo finished  |
+| **0**| X      | 24-Sep  | X      | James  | NA |
+| **1**| 29-Sep | 30-Sep   | 1-Oct | James  | NA    |
+| **2**| 6-Oct  | 7-Oct   | 8-Oct  | James  | NA    |
+| **3**| 13-Oct | 14-Oct  | 15-Oct | James  | 1-page project pitch    |
+| **4**| 20-Oct | 21-Oct  | 22-Oct | James  | NA   | 
+| **5**| 27-Oct | 28-Oct  | 29-Oct | James  | Mid-term presentation    |
+| **6**| 3-Nov  | 4-Nov   | 5-Nov  | James  | NA    |
+| **7**| 10-Nov | 11-Nov  | 12-Nov | Jack   | NA    |
+| **8**| 17-Nov | 18-Nov  | 19-Nov | Jack   | NA    |
+| **9**| 24-Nov | 25-Nov  | 26-Nov | James  | NA  |
+|**10**| 1-Dec  | 2-Dec   | 3-Dec  | James  | End-term presentation, Project GitHub Repo finished  |
 
 ### Notes
 - No finals (go do some research and publish a paper instead)
