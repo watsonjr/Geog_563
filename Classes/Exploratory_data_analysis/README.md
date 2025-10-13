@@ -15,14 +15,32 @@ The primary languages for exploratory data analysis are Python and R.
 ## In R
 ### Looking at the Data
 
-`str()` : this command shows the overall structure of the data, including variable names, data types and the first few values
+`str()` : this command shows the overall structure of the data, including variable names, data types and the first few values, an example using `palmerpenguins` dataset:
+```r
+str(penguins)
+```
+<img width="918" height="211" alt="image" src="https://github.com/user-attachments/assets/1883686e-d2ae-4320-b947-3d021e3b421b" />
 
 ### Finding gaps or unusual numbers within data
 `is.na(df)` : this function returns a logical matrix indicating which elements are missing (TRUE) and elements that aren’t missing (FALSE)
+```r
+is.na(penguins_raw)
+```
+<img width="1009" height="376" alt="image" src="https://github.com/user-attachments/assets/a187ae02-56b7-4ebc-97d8-48a07d7981ef" />
+
 `sum(is.na(df))` : this function counts the number of missing values in a data frame (df)
+
+```r
+sum(is.na(penguins_raw)
+```
+<img width="287" height="43" alt="image" src="https://github.com/user-attachments/assets/395de15d-deb2-417c-b699-a76d40d9cdb1" />
+
 ### Counting missing values in each column (2 options)
-`sapply()`
-`colSums(is.na(df))` 
+`colSums(is.na(df))` command counts missing values in each column
+```r
+colSums(is.na(penguins_raw))
+```
+<img width="1015" height="188" alt="image" src="https://github.com/user-attachments/assets/d9d89a68-b973-4d8e-8415-a8865106610d" />
 
 ## Summarizing and Visualizing Data
 
