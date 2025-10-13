@@ -24,9 +24,6 @@ The primary languages for exploratory data analysis are Python and R.
 `sapply()`
 `colSums(is.na(df))` 
 
-## In Python
-
-
 ## Summarizing and Visualizing Data
 
 The `summary()` function will provide counts of categorical data and summary statistics (mean, median, minimum, maximum, and quartile values) for numerical data. 
