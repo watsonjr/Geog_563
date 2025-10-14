@@ -33,32 +33,42 @@ If you already have it, update to the latest version to ensure compatibility wit
 
 # Plotting in Python
 
-This section provides a general overview of how to create and customize plots in Python using Matplotlib.
+This section provides a general overview of how to create and customize plots in Python using Matplotlib, with commented code examples.
 
 ## 1. Import Libraries
 
 ```python
+# Import the main plotting module
 import matplotlib.pyplot as plt
+
+# Import NumPy to generate data values
 import numpy as np
 ```
 
 ## 2. Prepare Data
 
 ```python
+# Create evenly spaced x-values from 0 to 10
 x = np.linspace(0, 10, 50)
+
+# Generate y-values based on a mathematical function (y = x^2)
 y = x ** 2
 ```
 
 ## 3. Create a Plot
 
 ```python
+# Create a basic line plot of y versus x
 plt.plot(x, y)
+
+# Display the plot window
 plt.show()
 ```
 
 ## 4. Add Titles and Labels
 
 ```python
+# Add a plot title and label the axes for clarity
 plt.plot(x, y)
 plt.title("Example Plot")
 plt.xlabel("X values")
@@ -69,7 +79,12 @@ plt.show()
 ## 5. Customize Appearance
 
 ```python
+# Customize color, line style, and marker shape
 plt.plot(x, y, color='green', linestyle='--', marker='o')
+plt.title("Customized Plot")
+plt.xlabel("X values")
+plt.ylabel("Y values")
+plt.show()
 ```
 
 Common options:
@@ -81,26 +96,34 @@ Common options:
 ## 6. Multiple Datasets
 
 ```python
+# Create a second dataset to compare with the first
 y2 = [val * 1.5 for val in y]
+
+# Plot both datasets with labels and a legend
 plt.plot(x, y, label="Original")
 plt.plot(x, y2, label="Scaled")
 plt.legend()
+plt.title("Multiple Datasets Example")
+plt.xlabel("X values")
+plt.ylabel("Y values")
 plt.show()
 ```
 
 ## 7. Other Plot Types
 
 ```python
-plt.scatter(x, y)     # Scatter plot
-plt.bar(x, y)         # Bar chart
-plt.hist(y)           # Histogram
-plt.boxplot(y)        # Box plot
-plt.pie(y)            # Pie chart
+# Different plot styles available in Matplotlib
+plt.scatter(x, y)     # Scatter plot to show relationships between variables
+plt.bar(x, y)         # Bar chart to compare categories
+plt.hist(y)           # Histogram to show data distribution
+plt.boxplot(y)        # Box plot to show spread and outliers
+plt.pie(y)            # Pie chart to show proportions
 ```
 
 ## 8. Save a Plot
 
 ```python
+# Save the current figure to an image file (e.g., PNG format)
 plt.savefig("my_plot.png", dpi=300)
 ```
 
