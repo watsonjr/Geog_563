@@ -206,17 +206,3 @@ ggplot(mpg, aes(x = displ, y = hwy)) +
 * [R visualization recipes](https://posit.cloud/learn/recipes)
 * [Matplotlib documentation](https://matplotlib.org/stable/index.html)
 
----
-
-# Summary
-
-Data visualization is a key component of analysis in both Python and R.
-The general process is:
-
-1. Import a plotting library.
-2. Prepare or load your data.
-3. Choose an appropriate plot type.
-4. Customize appearance and labels.
-5. Display or save the plot.
-
-Whether using **Matplotlib** in Python or **ggplot2** in R, clear and effective plots make data insights easier to interpret and communicate.
