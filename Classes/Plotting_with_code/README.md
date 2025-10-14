@@ -204,7 +204,7 @@ ggplot(mpg, aes(x = displ, y = hwy)) +
 
 * [ggplot2 documentation](https://ggplot2.tidyverse.org/)
 * [R visualization recipes](https://posit.cloud/learn/recipes)
-* [DataCamp tutorials](https://www.datacamp.com/)
+* [Matplotlib documentation](https://matplotlib.org/stable/index.html)
 
 ---
 
