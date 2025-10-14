@@ -1,76 +1,62 @@
-# Creating Plots in Python
+# Plotting with Code
 
-This guide provides a general overview of how to create and display plots in Python for data visualization.
+This document outlines how to create and visualize data using plots in both **Python** and **R Studio**. It covers basic plotting workflows, common plot types, and best practices for clear and effective data visualization.
 
 ---
 
-## 1. Install a Plotting Library
+## Why Plotting Data is Important
 
-The most common library for plotting in Python is **Matplotlib**. You can install it using:
+Plotting data helps readers visualize patterns, trends, and outliers that might be difficult to detect from raw data alone. Using different types of plots can also help illustrate relationships, correlations, and comparisons between variables.
+
+---
+
+## Software
+
+### Python
+
+Python is one of the most popular languages for data analysis and visualization. It supports multiple libraries such as **Matplotlib**, **Seaborn**, and **Plotly**.
+
+Install Matplotlib with:
 
 ```bash
 pip install matplotlib
 ```
 
-Other options include:
+### R Studio
 
-* **Seaborn** (for statistical plots)
-* **Plotly** (for interactive plots)
-* **Pandas plotting** (built on top of Matplotlib)
+R Studio can be downloaded and installed directly on your computer.
+If you already have it, update to the latest version to ensure compatibility with packages like **ggplot2**.
+
+> Close R Studio before updating to ensure a smooth installation process.
 
 ---
 
-## 2. Import Libraries
+# Plotting in Python
 
-You can import the main plotting module like this:
+This section provides a general overview of how to create and customize plots in Python using Matplotlib.
+
+## 1. Import Libraries
 
 ```python
 import matplotlib.pyplot as plt
-```
-
-If you need to generate numerical data, you can also import NumPy:
-
-```python
 import numpy as np
 ```
 
----
-
-## 3. Prepare Data
-
-Data can come from many sources — a file, a database, or code-generated arrays.
-Example using simple data:
-
-```python
-x = [1, 2, 3, 4, 5]
-y = [2, 4, 6, 8, 10]
-```
-
-Or generate evenly spaced numbers:
+## 2. Prepare Data
 
 ```python
 x = np.linspace(0, 10, 50)
 y = x ** 2
 ```
 
----
-
-## 4. Create a Plot
-
-A simple line plot can be made using:
+## 3. Create a Plot
 
 ```python
 plt.plot(x, y)
 plt.show()
 ```
 
-This displays a basic graph of `y` versus `x`.
-
----
-
-## 5. Add Titles and Labels
-
-You can make your plot clearer by labeling the axes and adding a title:
+## 4. Add Titles and Labels
 
 ```python
 plt.plot(x, y)
@@ -80,11 +66,7 @@ plt.ylabel("Y values")
 plt.show()
 ```
 
----
-
-## 6. Customize Appearance
-
-You can change line styles, colors, and markers:
+## 5. Customize Appearance
 
 ```python
 plt.plot(x, y, color='green', linestyle='--', marker='o')
@@ -92,15 +74,11 @@ plt.plot(x, y, color='green', linestyle='--', marker='o')
 
 Common options:
 
-* `color`: `'red'`, `'blue'`, `'green'`, or hex values like `'#123456'`
-* `linestyle`: `'-'`, `'--'`, `':'`, or `'-.`
-* `marker`: `'o'`, `'s'`, `'^'`, etc.
+* `color`: `'red'`, `'blue'`, `'green'`, or hex codes like `'#123456'`
+* `linestyle`: `'-'`, `'--'`, `':'`, `'-.`'
+* `marker`: `'o'`, `'s'`, `'^'`
 
----
-
-## 7. Multiple Datasets
-
-You can plot multiple lines on the same figure:
+## 6. Multiple Datasets
 
 ```python
 y2 = [val * 1.5 for val in y]
@@ -110,11 +88,7 @@ plt.legend()
 plt.show()
 ```
 
----
-
-## 8. Other Plot Types
-
-Matplotlib supports many kinds of plots:
+## 7. Other Plot Types
 
 ```python
 plt.scatter(x, y)     # Scatter plot
@@ -124,61 +98,102 @@ plt.boxplot(y)        # Box plot
 plt.pie(y)            # Pie chart
 ```
 
----
-
-## 9. Save a Plot
-
-You can export your plot as an image file:
+## 8. Save a Plot
 
 ```python
 plt.savefig("my_plot.png", dpi=300)
 ```
 
-Supported formats include `.png`, `.jpg`, `.pdf`, and `.svg`.
+---
+
+# Plotting in R Studio
+
+## Different Types of Plots in R
+
+R offers many visualization types, primarily using the **ggplot2** package.
+
+| **Goal**                                     | **Best Plot**                   | **R Library Examples**                                                           |
+| -------------------------------------------- | ------------------------------- | -------------------------------------------------------------------------------- |
+| **Compare categories**                       | Bar chart, Grouped bar chart    | `ggplot2::geom_bar()`, `ggplot2::geom_col()`                                     |
+| **Show trends over time**                    | Line chart, Area chart          | `ggplot2::geom_line()`, `ggplot2::geom_area()`                                   |
+| **Show distribution of values**              | Histogram, Boxplot, Violin plot | `ggplot2::geom_histogram()`, `ggplot2::geom_boxplot()`, `ggplot2::geom_violin()` |
+| **Show relationships between two variables** | Scatter plot, Regression line   | `ggplot2::geom_point()`, `ggplot2::geom_smooth(method = "lm")`                   |
+| **Show proportions or parts of a whole**     | Stacked bar chart, Pie chart    | `ggplot2::geom_bar(position = "fill")`, `ggplot2::coord_polar()`                 |
+| **Show correlations or multivariate data**   | Heatmap, Pair plot              | `ggplot2::geom_tile()`, `GGally::ggpairs()`                                      |
+| **Show uncertainty or variation**            | Error bars, Boxplot             | `ggplot2::geom_errorbar()`, `ggplot2::geom_boxplot()`                            |
 
 ---
 
-## 10. General Workflow
+## Best Practices for Visualization
 
-1. Import plotting library
-2. Load or create data
-3. Choose the plot type
-4. Customize labels and styles
-5. Display or save the plot
+**1. Choose the right visualization for your goals.**
 
----
+* Use plots that best match the type of data and story you want to tell.
 
-## Example
+**2. Use colors that are easy to read.**
 
-```python
-import matplotlib.pyplot as plt
-import numpy as np
+* Maintain color consistency across plots.
+* Use color palettes suitable for color-blind accessibility.
 
-x = np.linspace(0, 5, 100)
-y = np.exp(x)
+Install a color-blind friendly palette:
 
-plt.plot(x, y, color='blue')
-plt.title("Exponential Growth")
-plt.xlabel("X-axis")
-plt.ylabel("Y-axis")
-plt.grid(True)
-plt.show()
+```R
+install.packages("viridis")
+library(viridis)
 ```
 
+**3. Label your plots clearly.**
+
+* Always include titles, axis labels, and units.
+* Add legends if plotting multiple variables.
+
+Example in R:
+
+```R
+library(ggplot2)
+ggplot(mpg, aes(x = displ, y = hwy)) +
+  geom_point(color = "darkorange") +
+  labs(title = "Engine Size vs. Highway MPG",
+       x = "Engine Displacement (liters)",
+       y = "Highway Miles per Gallon")
+```
+
+**4. Use appropriate scales.**
+
+* Make sure axis scales fit your data and do not distort trends.
+
+**5. Keep plots simple and accessible.**
+
+* Avoid excessive decorations.
+* Use readable fonts and appropriate text sizes.
+
+**6. Provide context.**
+
+* Add annotations or reference lines to highlight key insights.
+
+**7. Ensure reproducibility.**
+
+* Keep code organized and consistent in style.
+
 ---
 
-## Summary
+## Resources
 
-Creating plots in Python follows a simple pattern:
+* [ggplot2 documentation](https://ggplot2.tidyverse.org/)
+* [R visualization recipes](https://posit.cloud/learn/recipes)
+* [DataCamp tutorials](https://www.datacamp.com/)
 
-* Import a plotting library
-* Prepare your data
-* Call a plotting function
-* Customize as needed
-* Display or save the figure
+---
 
-This general approach applies whether you use Matplotlib, Seaborn, Plotly, or another visualization tool.
+# Summary
 
+Data visualization is a key component of analysis in both Python and R.
+The general process is:
 
-# Insert Writeup Here
-# Google Doc Link: https://docs.google.com/document/d/1WgP2UnqisQ-X36laP5-93Ptow1lTxA5wsAUWuQyJetc/edit?usp=sharing
+1. Import a plotting library.
+2. Prepare or load your data.
+3. Choose an appropriate plot type.
+4. Customize appearance and labels.
+5. Display or save the plot.
+
+Whether using **Matplotlib** in Python or **ggplot2** in R, clear and effective plots make data insights easier to interpret and communicate.
