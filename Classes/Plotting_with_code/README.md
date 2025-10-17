@@ -1,2 +1,208 @@
-# Empty README that should be filled.
+# Plotting with Code
+
+This document outlines how to create and visualize data using plots in both **Python** and **R Studio**. It covers basic plotting workflows, common plot types, and best practices for clear and effective data visualization.
+
+---
+
+## Why Plotting Data is Important
+
+Plotting data helps readers visualize patterns, trends, and outliers that might be difficult to detect from raw data alone. Using different types of plots can also help illustrate relationships, correlations, and comparisons between variables.
+
+---
+
+## Software
+
+### Python
+
+Python is one of the most popular languages for data analysis and visualization. It supports multiple libraries such as **Matplotlib**, **Seaborn**, and **Plotly**.
+
+Install Matplotlib with:
+
+```bash
+pip install matplotlib
+```
+
+### R Studio
+
+R Studio can be downloaded and installed directly on your computer.
+If you already have it, update to the latest version to ensure compatibility with packages like **ggplot2**.
+
+> Close R Studio before updating to ensure a smooth installation process.
+
+---
+
+# Plotting in Python
+
+This section provides a general overview of how to create and customize plots in Python using Matplotlib, with commented code examples.
+
+## 1. Import Libraries
+
+```python
+# Import the main plotting module
+import matplotlib.pyplot as plt
+
+# Import NumPy to generate data values
+import numpy as np
+```
+
+## 2. Prepare Data
+
+```python
+# Create evenly spaced x-values from 0 to 10
+x = np.linspace(0, 10, 50)
+
+# Generate y-values based on a mathematical function (y = x^2)
+y = x ** 2
+```
+
+## 3. Create a Plot
+
+```python
+# Create a basic line plot of y versus x
+plt.plot(x, y)
+
+# Display the plot window
+plt.show()
+```
+
+## 4. Add Titles and Labels
+
+```python
+# Add a plot title and label the axes for clarity
+plt.plot(x, y)
+plt.title("Example Plot")
+plt.xlabel("X values")
+plt.ylabel("Y values")
+plt.show()
+```
+
+## 5. Customize Appearance
+
+```python
+# Customize color, line style, and marker shape
+plt.plot(x, y, color='green', linestyle='--', marker='o')
+plt.title("Customized Plot")
+plt.xlabel("X values")
+plt.ylabel("Y values")
+plt.show()
+```
+
+Common options:
+
+* `color`: `'red'`, `'blue'`, `'green'`, or hex codes like `'#123456'`
+* `linestyle`: `'-'`, `'--'`, `':'`, `'-.`'
+* `marker`: `'o'`, `'s'`, `'^'`
+
+## 6. Multiple Datasets
+
+```python
+# Create a second dataset to compare with the first
+y2 = [val * 1.5 for val in y]
+
+# Plot both datasets with labels and a legend
+plt.plot(x, y, label="Original")
+plt.plot(x, y2, label="Scaled")
+plt.legend()
+plt.title("Multiple Datasets Example")
+plt.xlabel("X values")
+plt.ylabel("Y values")
+plt.show()
+```
+
+## 7. Other Plot Types
+
+```python
+# Different plot styles available in Matplotlib
+plt.scatter(x, y)     # Scatter plot to show relationships between variables
+plt.bar(x, y)         # Bar chart to compare categories
+plt.hist(y)           # Histogram to show data distribution
+plt.boxplot(y)        # Box plot to show spread and outliers
+plt.pie(y)            # Pie chart to show proportions
+```
+
+## 8. Save a Plot
+
+```python
+# Save the current figure to an image file (e.g., PNG format)
+plt.savefig("my_plot.png", dpi=300)
+```
+
+---
+
+# Plotting in R Studio
+
+## Different Types of Plots in R
+
+R offers many visualization types, primarily using the **ggplot2** package.
+
+| **Goal**                                     | **Best Plot**                   | **R Library Examples**                                                           |
+| -------------------------------------------- | ------------------------------- | -------------------------------------------------------------------------------- |
+| **Compare categories**                       | Bar chart, Grouped bar chart    | `ggplot2::geom_bar()`, `ggplot2::geom_col()`                                     |
+| **Show trends over time**                    | Line chart, Area chart          | `ggplot2::geom_line()`, `ggplot2::geom_area()`                                   |
+| **Show distribution of values**              | Histogram, Boxplot, Violin plot | `ggplot2::geom_histogram()`, `ggplot2::geom_boxplot()`, `ggplot2::geom_violin()` |
+| **Show relationships between two variables** | Scatter plot, Regression line   | `ggplot2::geom_point()`, `ggplot2::geom_smooth(method = "lm")`                   |
+| **Show proportions or parts of a whole**     | Stacked bar chart, Pie chart    | `ggplot2::geom_bar(position = "fill")`, `ggplot2::coord_polar()`                 |
+| **Show correlations or multivariate data**   | Heatmap, Pair plot              | `ggplot2::geom_tile()`, `GGally::ggpairs()`                                      |
+| **Show uncertainty or variation**            | Error bars, Boxplot             | `ggplot2::geom_errorbar()`, `ggplot2::geom_boxplot()`                            |
+
+---
+
+## Best Practices for Visualization
+
+**1. Choose the right visualization for your goals.**
+
+* Use plots that best match the type of data and story you want to tell.
+
+**2. Use colors that are easy to read.**
+
+* Maintain color consistency across plots.
+* Use color palettes suitable for color-blind accessibility.
+
+Install a color-blind friendly palette:
+
+```R
+install.packages("viridis")
+library(viridis)
+```
+
+**3. Label your plots clearly.**
+
+* Always include titles, axis labels, and units.
+* Add legends if plotting multiple variables.
+
+Example in R:
+
+```R
+library(ggplot2)
+ggplot(mpg, aes(x = displ, y = hwy)) +
+  geom_point(color = "darkorange") +
+  labs(title = "Engine Size vs. Highway MPG",
+       x = "Engine Displacement (liters)",
+       y = "Highway Miles per Gallon")
+```
+
+**4. Use appropriate scales.**
+
+* Make sure axis scales fit your data and do not distort trends.
+
+**5. Keep plots simple and accessible.**
+
+* Avoid excessive decorations.
+* Use readable fonts and appropriate text sizes.
+
+**6. Provide context.**
+
+* Add annotations or reference lines to highlight key insights.
+
+**7. Ensure reproducibility.**
+
+* Keep code organized and consistent in style.
+
+---
+
+## Resources
+
+* [ggplot2 documentation](https://ggplot2.tidyverse.org/)
+* [R visualization recipes](https://posit.cloud/learn/recipes)
+* [Matplotlib documentation](https://matplotlib.org/stable/index.html)
 
