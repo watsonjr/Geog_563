@@ -133,7 +133,5 @@ Week 10: Project GitHub repo finished 28 points (28%)
 **Total points: 100 (100%)**
 
 
---------
-
 
 ![Course Icon](./Resources/Images/image_2.jpg)
