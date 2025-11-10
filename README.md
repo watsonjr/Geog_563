@@ -126,9 +126,11 @@ Week 3: 1-page pitch 12 points (12%)
 
 Week 5: mid-term presentation 16 points (16%)
 
-Week 10: end-term presentation 20 points (20%)
+Week 10: end-term presentation 10 points (10%)
 
-Week 10: Project GitHub repo finished 28 points (28%)
+Week 10: Project Report 17 points (17%)
+
+Week 10: Project GitHub Repo finished 20 points (20%)
 
 **Total points: 100 (100%)**
 
