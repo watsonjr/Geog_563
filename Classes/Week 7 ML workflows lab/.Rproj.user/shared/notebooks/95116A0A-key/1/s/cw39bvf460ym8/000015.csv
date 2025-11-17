@@ -1,0 +1,2 @@
+"0",""
+"0","plot(vario$variograms[[1]]$exp_var$dist, vario$variograms[[1]]$exp_var$gamma)"

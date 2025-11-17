@@ -1,0 +1,7 @@
+"0","df <- data %>% select(-Start.latitude..decimal.degrees.,"
+"0","                      -Start.longitude..decimal.degrees.,"
+"0","                      - Haul.ID)"
+"0","N <- nrow(df)"
+"0","test_inds <- sample(1:N,round(N/5))"
+"0","training <-df[test_inds,]"
+"0","testing <-df[-test_inds,]"

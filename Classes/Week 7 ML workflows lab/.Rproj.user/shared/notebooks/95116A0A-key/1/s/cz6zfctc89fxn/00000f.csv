@@ -1,0 +1,6 @@
+"0","# select haul IDs without the species"
+"0","no_crab_Haul.IDs  <- haul_data$Haul.ID[!(haul_data$Haul.ID %in% species_data$Haul.ID )]"
+"0",""
+"0","data_no_species <- data.frame(Haul.ID=no_crab_Haul.IDs,Number.CPUE..no.km2.=0 )"
+"0",""
+"0","species_data <- rbind(data_no_species, species_data)"

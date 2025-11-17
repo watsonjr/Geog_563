@@ -1,0 +1,6 @@
+"0","library(ggplot2)"
+"0","var_imp <- varImp(mod,useModel=F)"
+"0","importance <- var_imp$importance"
+"0","importance$variable <- rownames(importance)"
+"0","ggplot(importance, aes(x = TRUE., y = variable))+"
+"0","  geom_point()+theme_classic()"

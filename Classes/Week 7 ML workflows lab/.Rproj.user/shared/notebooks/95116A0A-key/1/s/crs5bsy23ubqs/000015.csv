@@ -1,0 +1,4 @@
+"0","species_data <- species_data %>% "
+"0","  filter(Taxon.common.name == ""snow crab"") %>%"
+"0","  select(Haul.ID,Number.CPUE..no.km2.)"
+"0","species_data"

@@ -1,0 +1,2 @@
+"0","data$presence <- data$Number.CPUE..no.km2. > 0.0"
+"0","data <- data %>% select(-Number.CPUE..no.km2.) "

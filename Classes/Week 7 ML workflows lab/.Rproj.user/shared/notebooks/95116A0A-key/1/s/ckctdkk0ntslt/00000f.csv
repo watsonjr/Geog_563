@@ -1,0 +1,5 @@
+"0","X <- data %>% select(-Survey.year, -presence)"
+"0","y <- data %>% select( Haul.ID, presence)"
+"0","X <- as.data.frame(scale(X))"
+"0","X$Haul.ID <- data$Haul.ID"
+"0","data <- merge(y,X,by = ""Haul.ID"")"
