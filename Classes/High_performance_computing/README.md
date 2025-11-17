@@ -22,3 +22,8 @@ graph TD
 * Package management - (R, pip, virtual environment)
 * Parallelization - Python  already has base libraries for multi-processing
 
+## Demo
+
+This [YouTube video](https://www.youtube.com/watch?v=xXirbnUB3NU) provides a tutorial on how to run a parallel Python script using AWS.
+
+John Woodhill also created a [GitHub repository](https://github.com/johnwoodill/parallel-processing-demo) so that we can do a similar process using spatial data.
