@@ -61,22 +61,14 @@ The species_data dataset contains a column named Taxon.common.name, which lists 
 The raw data in the species_data dataset includes lots of unnecessary columns. We can simplify a bit by using the select function to restrict the data to the columns of interest `Haul.ID`, which will allow us to link the observations to the abiotic conditions observed in the haul_data data set, and `Number.CPUE..no.km2.`, which is a proxy for abundance. 
 
 ```{r}
-species_data <- species_data %>% 
-  filter(Taxon.common.name == "snow crab") %>%
-  select(Haul.ID,Number.CPUE..no.km2.)
-species_data
+
 ```
 # Add survey hauls that did not observe the species of interest 
 
 Unfortunately, the species_data dataset does not include observations where the species of interest was absent, so we will need to add these back in and assign the species and abundance (`Number.CPUE..no.km2.`) of zero. The variable`Haul.ID` provides a unique identifier for each data point in the survey. You can use this variable to identify individual samples with and without the species of interest. 
  
 ```{r}
-# select haul IDs without the species
-no_crab_Haul.IDs  <- haul_data$Haul.ID[!(haul_data$Haul.ID %in% species_data$Haul.ID )]
 
-data_no_species <- data.frame(Haul.ID=no_crab_Haul.IDs,Number.CPUE..no.km2.=0 )
-
-species_data <- rbind(data_no_species, species_data)
 ```
 
 # Merge species and haul data sets 
@@ -86,33 +78,21 @@ Use the `Haul.ID` to merge the haul_data data set with covariates into the speci
 This is also a good place to use the lubridate library to convert the dates in the `date.and.time` column into a numeric value for the day of the year to test the effect of seasonality on the species distribution. Once you add this variable, remove the `Date.and.time` column. 
 
 ```{r}
-data <- merge(species_data, haul_data, by ="Haul.ID")%>% 
-  select(Haul.ID,Bottom.temperature..degrees.Celsius.,
-         Surface.temperature..degrees.Celsius.,Depth..m., 
-         Survey.year,Start.latitude..decimal.degrees.,
-         Start.longitude..decimal.degrees.,Date.and.time,
-         Number.CPUE..no.km2. )
 
-data$Day.of.year <- yday(dmy(substr(data$Date.and.time,1,11)))
-data <- data %>% select(-Date.and.time)
-
-head(data)
 ```
 
 # Merge the ice and blooms data into the main data set
 The bloom_data and ice_data datasets do not include any spatial information, so we can merge them into the main data set using the `Survey.year` column. 
 
 ```{r}
-data <- merge(data,bloom_data,by = "Survey.year")%>%
-  merge(ice_data,by = "Survey.year")
+
 ```
 
 # Convert abundances to presence-absence data
 Create a new column that indicates observations where the species is present, and remove the column for abundances.
 
 ```{r}
-data$presence <- data$Number.CPUE..no.km2. > 0.0
-data <- data %>% select(-Number.CPUE..no.km2.) 
+
 ```
 
 
@@ -120,31 +100,21 @@ data <- data %>% select(-Number.CPUE..no.km2.)
 The best practice for most supervised machine learning applications is scaling the predictors to have a mean of zero and a variance of one. This practice helps many algorithms to make apples-to-apples comparisons of the importance of each predictor. It is less critical for random forest, but it is still best practice. The function `scale` is very useful for this step.
 
 ```{r}
-X <- data %>% select(-Survey.year, -presence)
-y <- data %>% select( Haul.ID, presence)
-X <- as.data.frame(scale(X))
-X$Haul.ID <- data$Haul.ID
-data <- merge(y,X,by = "Haul.ID")
+
 ```
 
 # Removing missing values
 We need to handle observations that have missing values for one or more of the predictors. In this case, there are relatively few missing values, so simply removing them should be ok. 
 
 ```{r}
-data <- na.omit(data)
+
 ```
 
 # Split into training and testing sets 
 Next, we need to split the data into training and testing sets. To start, split them at random. I suggest randomly selecting 20% of the observations to remove from the training data set for model validation. Later, we will use a method for generating spatial training-validation splits. 
 
 ```{r}
-df <- data %>% select(-Start.latitude..decimal.degrees.,
-                      -Start.longitude..decimal.degrees.,
-                      - Haul.ID)
-N <- nrow(df)
-test_inds <- sample(1:N,round(N/5))
-training <-df[test_inds,]
-testing <-df[-test_inds,]
+
 ```
 
 # Format the outcome variables
@@ -152,8 +122,7 @@ The outcome variables should indicate the species presence either as a Boolean (
 
 
 ```{r}
-training <- training %>% mutate(presence= as.factor(presence))
-testing <- testing %>% mutate(presence=as.factor(presence))
+
 ```
 
 # Train the random forest model with the caret package
@@ -168,14 +137,7 @@ Once you have the `tuneGrid` and `trainControl` arguments set up, run the model 
 
 
 ```{r}
-library(caret)
 
-tuneGrid <- expand.grid(.mtry = c(2,4,8))
-trainControl <- trainControl(method = "cv", number = 4)
-mod <- train(presence~ ., 
-             data = training , 
-             method = "rf",
-             trControl = trainControl, tuneGrid = tuneGrid)
 ```
 
 # Evaluate the model's skill on the validation set with ROC curves
@@ -183,23 +145,14 @@ mod <- train(presence~ .,
 You can write code to calculate ROC curves from scratch, but I recommend computing them using the pROC library. You can construct the receiver operator curves using the `pROC:roc` function, calculate the area under the curve with `pROC::auc`, and plot the curve using `plot`. You will need to check the documentation to see how each of these functions is implemented. 
 
 ```{r}
-library(pROC)
-preds <- predict(mod, testing, type = "prob")
-roc_obj <- roc(as.numeric(testing$presence)-1, preds$`TRUE`)
-plot(roc_obj, main = "ROC Curve Example")
-auc(roc_obj)
+
 ```
 
 # Identify the most important predictors of species presence. 
 One really nice tool for interpreting random forest models is variable importance plots. Read through the caret documentation to find a function for calculating variable importance and create a scatter plot with the results.
 
 ```{r}
-library(ggplot2)
-var_imp <- varImp(mod,useModel=F)
-importance <- var_imp$importance
-importance$variable <- rownames(importance)
-ggplot(importance, aes(x = TRUE., y = variable))+
-  geom_point()+theme_classic()
+
 ```
 
 # Visualize relationships learned by the model 
@@ -207,9 +160,7 @@ ggplot(importance, aes(x = TRUE., y = variable))+
 Another tool we can use to interpret the model's predictions is partial dependence plots. These show the relationship between a predictor and the outcome used by the model to make predictions. We will need a new library pdp to make these plots. Again, you can use the help function to see how this library works. Also, be careful. The pdp library does not know how your data is scaled and applies the wrong scaling by default for presence/absence data. You will need to tell the function that calculates the partial dependence plot that your model returns probabilities. 
 
 ```{r}
-library(pdp)
-partial(mod, "Bottom.temperature..degrees.Celsius.", train = data, 
-        prob = TRUE, which.class = "TRUE", plot = TRUE)
+
 ```
 # Validate the model using spatial blocking pattern (only required for graduate students)
 
@@ -222,20 +173,8 @@ Hint: to use blockCV we will need to reformat our data from a data.frame. Object
 
 1) Start by calculating the characteristic length scale. 
 ```{r}
-# set latitude and logitude columns
-lat <- "Start.latitude..decimal.degrees."
-lon <- "Start.longitude..decimal.degrees."
-# convert presence - absence data back to a numeric value
-data_sp <- data %>% mutate(presence = as.numeric(presence ))
 
-# convert data frame to SF
-sf_data <- st_as_sf(data_sp, coords = c(lon, lat), crs = 4326)
-
-# calculate spatial autocorrelation
-correlations <- cv_spatial_autocor(
-  x = sf_data,  
-  column = "presence",          
-  progress = T, plot = T)
+# extracting data from the  blockCV (correlations) object to create a semi variogram 
 distance <- correlations$variograms[[1]]$exp_var$dist
 semi_var <- correlations$variograms[[1]]$exp_var$gamma
 plot(distance,semi_var, xlab = "Distance (m)", ylab = "Semivar (gamma)")
@@ -243,48 +182,18 @@ plot(distance,semi_var, xlab = "Distance (m)", ylab = "Semivar (gamma)")
 
 2) Split the data into a training and a final validation set. Remove 20% of the data for final validation.
 ```{r}
-# split up the data set
-spatial_cv <- cv_spatial(x = sf_data, 
-                         column = "presence", 
-                         size = correlations$range, 
-                         k = 5)
 
-testing <- data_sp[spatial_cv$folds_ids == 5,]
-training <- data_sp[spatial_cv$folds_ids != 5,]
-training <- training %>% mutate(presence=as.factor(presence == 1))
-testing <- testing %>% mutate(presence=as.factor(presence == 1))
 ```
 
 3) Now that the final validation set is removed, split the data set up again into spatial blocks for cross-validation within the model tuning procedure.
 ```{r}
-sf_training <- st_as_sf(training, coords = c(lon, lat), crs = 4326)
-spatial_cv <- cv_spatial(x = sf_training, column = "presence", size = correlations$range, k = 4)
+
 ```
 
 4) Run the model training and tuning process using `caret::train` with the spatial training - testing splits. You will have to provide the `caret::trainControl` function with the indexes for each of the training and testing folds created by the `blockCV::cv_spatial` function. This can be done by supplying the `folds_list` from the `blockCV::cv_spatial` function using the `index` and `indexOut` arguments for `caret::trainControl`. However, you will have to reformat the `folds_list` object (hint: `lapply(list, `[[`, index)` will allow you to index into the list stored within lists).   
 
 ```{r}
-library(caret)
 
-index_in <- lapply(spatial_cv$folds_list, `[[`, 1)
-index_out <- lapply(spatial_cv$folds_list, `[[`, 2)
-
-trainControl_blocks <- trainControl(
-  method = "cv",
-  number = length(index_in),
-  index  = index_in,
-  indexOut = index_out
-)
-
-tuneGrid <- expand.grid(.mtry = c(2, 5))
-
-trainControl <- trainControl(method = "cv", number = 5)
-
-training <- training %>% select(-Start.latitude..decimal.degrees.,
-                                -Start.longitude..decimal.degrees.)
-mod <- train(presence ~ ., data = training, method = "rf",
-             trControl = trainControl_blocks, tuneGrid = tuneGrid)
-mod
 ```
 
 # Calculate the ROC curves on the spatial validation set
@@ -292,11 +201,7 @@ mod
 Use the same procedure as before to calculate the receiver operator characteristics. How much has the model's performance estimate changed from the random validation set?
 
 ```{r}
-library(pROC)
-preds <- predict(mod, testing, type = "prob")
-roc_obj <- roc(as.numeric(testing$presence)-1, preds$`TRUE`)
-plot(roc_obj, main = "ROC Curve Example")
-auc(roc_obj)
+
 ```
 
 
@@ -306,18 +211,11 @@ Recreate the variable importance and partial dependence plots on the model tuned
 
 
 ```{r}
-library(ggplot2)
-var_imp <- varImp(mod,useModel=F)
-importance <- var_imp$importance
-importance$variable <- rownames(importance)
-ggplot(importance, aes(x = TRUE., y = variable))+
-  geom_point()+theme_classic()
+
 ```
 
 ```{r}
-library(pdp)
-partial(mod, "Depth..m.", train = training, 
-        prob = TRUE, which.class = "TRUE", plot = TRUE)
+
 ```
 # Questions: 
 1. Repeat the analysis for another species. Do these species live in similar or different habitats? Provide evidence from the variable importance and partial dependence plots.  
