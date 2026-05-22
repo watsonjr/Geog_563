@@ -1,4 +1,4 @@
-# Analytical Workflows for Earth Systems Science
+# Workflows for Earth Systems Science
 
 Welcome to the course webpage for GEOG 463/563 at Oregon State University! This repository will contain all resources for the course.
 
